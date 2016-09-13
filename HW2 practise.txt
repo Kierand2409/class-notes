@@ -1,0 +1,63 @@
+seq1="CGCAGCTAACGCATTAAGCACTCCGCCTGGGGAGTACGACCGCAAGGTTGAA"
+#seq1[0] makes computer say 'C'. 14 As
+
+seq2="CGGATCGTAAAGCTCTGTTGTTGGTGAAGAAGGATAGAGGTAGTAACTGGCCT"
+
+numA=0
+numT=0
+numC=0
+numG=0
+
+numA=0
+for nextCharacter in seq1:
+	print ('next character is:', nextCharacter )
+	if nextCharacter == "A":
+		print ("we saw an A")
+		numA=numA+1
+
+nucleotides = ['A', 'T', 'C', 'G']
+
+for nextNuc in nucleotides:
+#count number of times nextNuc occurs in seq1
+	counter = [0, 0, 0, 0]
+	for nextCharacter in seq1:
+		print ('next character is:', nextCharacter )
+		if nextCharacter == nextNuc:
+			print ("we saw an A")
+			if nextNuc = 'A':
+				counter[0] = counter[0]+1
+			elif nextNuc='T':
+				counter[1] = counter[1]+1
+			elif nextNuc='C':
+				counter[2] = counter[2]+1
+			elif nextNuc='G':
+				counter[3] = counter[3]+1
+
+nextIndex=0
+while nextIndex < len(seq1):
+	print( seq2[nextIndex] )
+	nextIndex = nextIndex+1
+
+
+#End of in class notes
+
+countA=0
+countT=0
+countC=0
+countG=0
+
+for nextCharacter in seq1:
+	print (nextCharacter)
+	if nextCharacter == "A":
+		countA=countA+1
+	elif nextCharacter == "T":
+		countT=countT+1
+	elif nextCharacter == "C":
+		countC=countC+1
+	else nextCharacter == "G":
+		countG=countG+1
+		
+#seq1.count("A") outputs number of A
+
+print ('sequence:', seq1)
+print 'A\'s', countA #prints A's 14
