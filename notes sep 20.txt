@@ -1,0 +1,18 @@
+#tupple is like a list but immutable.
+
+\n inserts new line
+\t inserts tab
+
+
+str1="when in the Course of human Events"
+
+str1. #then hit tab for list of possible operations
+
+str1.swapcase() #swaps upper and lowercase, prints result
+
+#if end list with comma, can add stuff after. 
+
+.join(name of list) to join. 
+
+'\t' .join(name of list) adds tab character between each part. 
+	can put in tab delimited file like excel
