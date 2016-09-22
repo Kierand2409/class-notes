@@ -1,0 +1,23 @@
+#command line parameters:
+
+import sys
+
+parameter = sys.argv
+print ("parameters are: %s" % (parameter) )
+
+print ("first parameter is: %s" % (parameter [1]))
+
+import pandas as pd
+
+#end file with close, so it doesn't stay open
+
+#Writing Files
+
+outFile = open('output.txt', 'w')
+with open( 'poem.txt', 'r') as inFile:
+	for nextLine in inFile:
+		#print ("J at position %d in %s" % (nextLine.find("J"), nextLine)) 
+		if nextLine.find('J' > -1: outFile.write("line with a 'J': %s" % (nextLine))
+		
+#outFile.write("\n")
+#outFile.close()
