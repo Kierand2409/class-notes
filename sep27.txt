@@ -1,0 +1,19 @@
+newList=[]
+
+for i in range(4):
+	newList.append(i**2)
+
+#counts numbers of A, C, G, and T all in one line
+sequence="CGGATCGNNAAGCTCTGTTGTTGGTGANNNYYGGATAYAGGUUNYGTAACTGGCCT"
+nucs=['A','C','G','T']
+amb=['N','Y','U']
+[sequence.count(x) for x in nucs]
+#output is list of integers. Put above command in str() to convert. then you can join them
+
+#top one doesn't work
+print("%s\n%s\n" % ('\t'.join(nucs+amb), '\t'.join([str(sequence.count(x)) for x in nucs+amb]
+print("%s\n%s\n" % ( '\t'.join(nucs+amb), '\t'.join( [ str( sequence.count(x) ) for x in nucs+amb ] ) ) )
+
+#put decimal point after integers to stop everything after decimal point being rounded away
+#doesn't print GC ratio
+sequence.count('C')/sequence.count('G')
